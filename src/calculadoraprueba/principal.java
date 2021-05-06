@@ -32,7 +32,7 @@ public class principal {
         int operacion = 0;
         do {
             System.out.println(" Introduce Operacion a realizar");
-            System.out.println(" 1. suma \n 2. resta \n 3. multiplicacion \n 4. division \n 5. salir");
+            System.out.println(" 1. suma \n 2. resta \n 3. multiplicacion \n 4. division \n 5. resto \n 6. salir");
             // leo por teclado un entero como opción del menú
             operacion = sc.nextInt();
             // segun valor elegido ejecuto método del objeto claculadora
@@ -49,11 +49,14 @@ public class principal {
                 case 4:
                     System.out.println(" La division es " + casio.division());
                     break;
+                case 5:
+                    System.out.println(" El resto es "+casio.resto());
+                    break;
                 default:
                     System.out.println(" Debes elegir una opción de 1 a 5");
             }
 
-        } while (operacion != 5);
+        } while (operacion != 6);
 
         System.out.println(" Gracias por usar la calculadora...hasta luegooooorrr");
 

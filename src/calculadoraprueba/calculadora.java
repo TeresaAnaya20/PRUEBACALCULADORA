@@ -59,4 +59,8 @@ public class calculadora {
         double division = numero1 / numero2;
         return division;
     }
+    public double resto(){
+        double resto = numero1%numero2;
+        return resto;
+    }
 }
